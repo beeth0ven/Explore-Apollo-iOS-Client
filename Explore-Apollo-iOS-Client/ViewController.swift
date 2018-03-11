@@ -7,19 +7,22 @@
 //
 
 import UIKit
+import Apollo
 
 class ViewController: UIViewController {
 
+    let apollo = ApolloClient(url: URL(string: "https://home.beeth0ven.cf:3000/graphql")!)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        _ = apollo.watch(query: QueryQuery()) { (result, error) in
+            guard error == nil else {
+                print("error: \(error!)")
+                return
+            }
+            print("result: \(result!)")
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
