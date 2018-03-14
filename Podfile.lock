@@ -1,14 +1,17 @@
 PODS:
+  - Alamofire (4.7.0)
   - Apollo (0.8.0):
     - Apollo/Core (= 0.8.0)
   - Apollo/Core (0.8.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
   - Apollo (~> 0.8)
 
 SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Apollo: 66e0f52289551545adb7ecdd994e713fdbae26eb
 
-PODFILE CHECKSUM: 6d6391ed4b7d0b5294b2481adabbf8624491a4b7
+PODFILE CHECKSUM: b04b9e4577e375cb95fa2827965426506d82ac89
 
 COCOAPODS: 1.2.1

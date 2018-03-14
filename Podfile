@@ -5,4 +5,5 @@ target 'Explore-Apollo-iOS-Client' do
   use_frameworks!
 
   pod 'Apollo', '~> 0.8'
+  pod 'Alamofire', '~> 4.7'
 end
